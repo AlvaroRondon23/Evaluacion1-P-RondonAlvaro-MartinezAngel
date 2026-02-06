@@ -8,7 +8,7 @@ Fecha de Entrega: 06 de Febrero de 2026.
 
 # Integrantes
 [ALVARO RONDON] - CI: [31.266.292]
-[NOMBRE Y APELLIDO 2] - CI: [CÉDULA]
+[ANGEL MARTINEZ] - CI: [31.363.737]
 
 Tecnologías Utilizadas
 Framework: Laravel 12
@@ -22,4 +22,4 @@ Si deseas ejecutar este proyecto localmente, sigue estos pasos:
 
 1. Clonar el repositorio:
    ```bash
-   git clone [PEGA_AQUÍ_EL_LINK_DE_TU_REPO]
+   git clone [https://github.com/AlvaroRondon23/Paradigmas-de-Programaci-n/edit/main/README.md]
