@@ -36,7 +36,7 @@ Si deseas ejecutar este proyecto localmente, sigue estos pasos:
    
    Editar .env y configurar la base de datos:
 
-   ```env
+   #.env
       DB_CONNECTION=sqlite
       DB_DATABASE=database/database.sqlite
 
@@ -46,6 +46,7 @@ Si deseas ejecutar este proyecto localmente, sigue estos pasos:
 
 5. Crear el archivo de DB (Sqlite):
    ```PowerShell
+   #PowerShell
    New-Item -ItemType File -Path .\database\database.sqlite -Force
 
 6. Migrar la base de datos y ejecutar seeders:
