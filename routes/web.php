@@ -1,12 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PacienteController;
+use App\Http\Controllers\MascotasController;
 
-// Ruta raíz que redirige al listado (Opcional pero recomendado)
-Route::get('/', function () {
-    return redirect('/pacientes');
-});
+Route::resource('mascotas', MascotasController::class);
 
-// REQUERIMIENTO DEL PDF: Usar Route::resource
-Route::resource('pacientes', PacienteController::class);
+Route::get('/', [MascotasController::class, 'index']);
