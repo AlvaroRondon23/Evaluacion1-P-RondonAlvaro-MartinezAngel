@@ -40,27 +40,30 @@ Si deseas ejecutar este proyecto localmente, sigue estos pasos:
       DB_CONNECTION=sqlite
       DB_DATABASE=database/database.sqlite
 
-4. Generar APP KEY:
+4. Instalar Dependencias PHP
+    ```bash
+    composer install --no-interaction --prefer-dist --optimize-autoloader
+
+5. Generar APP KEY:
    ```bash
    php artisan key:generate
 
-5. Crear el archivo de DB (Sqlite):
-   ```PowerShell
-   #PowerShell
-   New-Item -ItemType File -Path .\database\database.sqlite -Force
+6. Crear el archivo de DB (SQlite):
+   ```bash
+   touch database/database.sqlite
 
-6. Migrar la base de datos y ejecutar seeders:
+7. Migrar la base de datos y ejecutar seeders:
    ```bash
    php artisan migrate:fresh --seed
 
-7. Limpiar caches (si fuera necesario):
+8. Limpiar caches (si fuera necesario):
    ```bash
    php artisan config:clear
    php artisan cache:clear
    php artisan view:clear
    composer dump-autoload
 
-8. Levantar servidor de desarrollo:
+9. Levantar servidor de desarrollo:
    ```bash
    php artisan serve
 
